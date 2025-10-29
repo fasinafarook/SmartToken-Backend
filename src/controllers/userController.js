@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 const sendOTPEmail = require('../services/mailer');
 const { generateOTP } = require('../services/otpService');
 
+
 const otpMap = new Map();
 
 exports.register = async (req, res) => {
